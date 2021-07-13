@@ -1,0 +1,143 @@
+/* Google Fonts start */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+/* Google Fonts End */
+/* Body Start here */
+body{
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+/* Body End Here */
+
+/* Header Start here */
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #2D25A0;
+    padding: 0px;
+    margin: 0px;
+    width: 1440px;
+}
+
+.header-top li, .header-bottom li{
+    list-style-type: none;
+    margin: 20px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: left;
+
+}
+.header-top a, .header-bottom a{
+    text-decoration: none;
+    color: white;
+    background-color: #2D25A0;
+}
+
+.header-bottom a{
+    text-decoration: none;
+    color: white;
+    background-color: #2D25A0;
+}
+
+.header-bottom .nav a{
+    background-color: #E02C6D;
+    padding: 5px;
+    border-radius: 5px;
+}
+.nav{
+    display: flex;
+    flex-direction: row;
+}
+/* Header End Here */
+
+.banner{
+    background-color: #2D25A0;
+    width: 1440px;
+}
+.detail{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end;
+    transition: transform 0.7s ease-out 0.2s;
+    padding-bottom: 100px;
+}
+
+.detail:hover{
+    background-color: rgba(157, 219, 31, 0.76);
+    transform: translate(3px,-2px);
+}
+.banner-img img{
+    height: 438px;
+    top: 153px;
+    border-radius: 0px;
+}
+
+.info p{
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 80px;
+    letter-spacing: 0px;
+    text-align: center;
+    color: white;
+    width: 180px;
+}
+
+.info a{
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    background-color: #E02C6D;
+    font-size: 30px;
+    padding: 2px;
+    margin-top: 50px;
+}
+
+/* player */
+.players{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 3px;
+    padding-left: 70px;
+    padding-right: 20px;
+    padding-top: 20px;
+}
+.player{
+    width: 330px;
+    box-shadow: 2px 3px 5px gray;
+    margin-top: 30px;
+    border-radius: 10px;
+    margin-left: 0px;
+    padding-left: 10px;
+    padding-right: 5px;
+}
+.player-img img{
+    height: 256px;
+    width: 330px;
+    border-radius: 10px;
+}
+
+.player-name{
+    font-family: monospace;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+.player .description{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: center;
+    height: 154px;
+    width: 300px;
+}
