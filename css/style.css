@@ -64,11 +64,11 @@ header{
     justify-content: space-around;
     align-items: flex-end;
     transition: transform 0.7s ease-out 0.2s;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
 }
 
-.detail:hover{
-    background-color: rgba(157, 219, 31, 0.76);
+.detail a:hover{
+    background-color: rgb(156, 219, 31);
     transform: translate(3px,-2px);
 }
 .banner-img img{
@@ -104,10 +104,11 @@ header{
     grid-template-columns: repeat(3, 1fr);
     grid-row-gap: 3px;
     padding-left: 70px;
-    padding-right: 20px;
+    padding-right: 5px;
     padding-top: 20px;
 }
 .player{
+    height: 474px;
     width: 330px;
     box-shadow: 2px 3px 5px gray;
     margin-top: 30px;
@@ -140,4 +141,112 @@ header{
     text-align: center;
     height: 154px;
     width: 300px;
+}
+/* High Light Match Start Here */
+.highlight-match{
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   margin-top: 50px;
+}
+
+.highlight-img img{
+    height: 427px;
+    width: 567px;
+    left: 717px;
+    top: 2889px;
+    margin-top: 80px;
+    border-radius: 10px;
+}
+
+.highlight-info{
+height: 309px;
+width: 466px;
+left: 182px;
+top: 2948px;
+border-radius: 0px;
+}
+.highlight-info p{
+    height: 181px;
+    width: 404px;
+    left: 0px;
+    top: 0px;
+    border-radius: 0px;
+    font-weight: 400;
+    font-size: 20px;
+}
+.highlight-info h1{
+    margin-top: 50px;
+    font-size: 28px;
+}
+
+.highlight-info a {
+    text-decoration: none;
+    background-color: #E02C6D;
+    color: white;
+    padding: 10px;
+    border-radius: 30px;
+    padding: 10px;
+}
+/* High Light Match End Here */
+
+.logo-img{
+    height: 110px;
+    border-radius: 0px;
+    text-align: center;
+    margin-top: 80px;
+}
+
+img{
+    width: 300px;
+}
+
+/* Footer Start Here */
+.icon{
+    text-align: center;
+    font-size: 30px;
+    padding: 10px;
+}
+
+.icon .fab{
+   color: rgba(79, 114, 114, 0.534);
+}
+
+.footer-bottom{
+    text-align: center;
+    font-size: 22px;
+    padding-bottom: 15px;
+}
+
+
+
+/* Media Query */
+@media only screen and (max-width:688px) {
+    .conatiner .nav{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header-bottom{
+        display: none;
+    }
+    .banner{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .detail{
+        flex-direction: column;
+        align-items: center;
+    }
+    .players{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-row-gap: 30px;
+    }
+    .player{
+        display: grid;
+        flex-direction: column;
+        align-items: center;
+    }
 }
